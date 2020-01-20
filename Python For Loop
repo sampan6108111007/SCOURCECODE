@@ -1,0 +1,11 @@
+Python For Loop
+คำสั่งวน loop ของภาษา Python โดยใช้ loop For และใช้ w3schools.com ในการ run ทดสอบ
+https://www.w3schools.com/python/showpython.asp?filename=demo_for_nested
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
+
+
