@@ -1,0 +1,22 @@
+Java For Loop
+
+คำสั่งวน loop ของภาษา Java โดยใช้ loop For และใช้ w3schools.com ในการ run ทดสอบ
+https://www.w3schools.com/java/showjava.asp?filename=demo_array_for_each
+public class MyClass {
+  public static void main(String[] args) {
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    for (String i : cars) {
+      System.out.println(i);
+    }    
+  }
+}
+
+
+
+
+
+
+
+
+
+
