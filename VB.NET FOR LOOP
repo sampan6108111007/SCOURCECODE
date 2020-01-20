@@ -1,0 +1,20 @@
+VB.NET FOR LOOP
+คำสั่งวน loop ของภาษา VB.NET โดยใช้ For Loop และใช้ jdoodle.com ในการ run ทดสอบ
+https://www.jdoodle.com/compile-vb-dot-net-online/
+Module Module1
+    Sub Main()
+        ' Outer for-loop.
+        For value As Integer = 0 To 3
+            Console.WriteLine("OUTER LOOP: {0}", value)
+            ' Inner for-loop.
+            For value2 As Integer = 5 To 0 Step -1
+                Console.WriteLine("INNER LOOP: {0}", value2)
+                If value2 = 3 Then
+                    ' Exit for exits the enclosing loop, not an outer loop.
+                    Console.WriteLine("EXIT INNER FOR")
+                    Exit For
+                End If
+            Next
+        Next
+    End Sub
+End Module
