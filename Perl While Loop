@@ -1,0 +1,17 @@
+Perl While Loop
+คำสั่งวน loop ของภาษา Perl โดยใช้ while Loop และใช้ jdoodle.com ในการ run ทดสอบ
+https://www.jdoodle.com/execute-perl-online/
+#!/usr/bin/perl
+use warnings;
+use strict;
+my $counter = 10;
+while($counter > 0){
+   print("$counter\n");
+   # count down
+   $counter--;
+   # pause program for 1 second
+   sleep(1);
+   if($counter == 0){
+ print("SAMPAN SU!\n");
+   }
+}
