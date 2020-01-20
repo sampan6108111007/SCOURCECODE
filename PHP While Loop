@@ -1,0 +1,18 @@
+PHP While Loop
+คำสั่งวน loop ของภาษา PHP โดยใช้ loop While และใช้ w3schools.com ในการ run ทดสอบ
+https://www.w3schools.com/php/phptryit.asp?filename=tryphp_loop_while2
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php  
+$x = 0;
+ 
+while($x <= 100) {
+  echo "The number is: $x <br>";
+  $x+=10;
+}
+?>  
+
+</body>
+</html>
