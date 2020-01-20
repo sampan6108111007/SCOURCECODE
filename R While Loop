@@ -1,0 +1,9 @@
+R While Loop
+
+คำสั่งวน loop ของภาษา R  โดยใช้ Loop While และใช้ jdoodle.com ในการ run ทดสอบ
+https://www.jdoodle.com/execute-r-online/
+i <- 1
+while (i < 910) {
+print(i)
+i = i+1
+}
