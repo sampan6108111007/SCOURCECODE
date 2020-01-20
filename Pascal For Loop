@@ -1,0 +1,15 @@
+Pascal For Loop
+
+คำสั่งวน loop ของภาษา Pascal โดยใช้ Loop For และใช้ jdoodle.com ในการ run ทดสอบ
+https://www.jdoodle.com/execute-pascal-online/
+program forLoop;
+var
+   a: integer;
+
+begin
+   for a := 1  to 678 do
+   
+   begin
+      writeln('value of a: ', a);
+   end;
+end.
