@@ -1,0 +1,31 @@
+<html>
+<body><font size=5>
+<pre style="font-family:courier;">
+<script>
+var black =""
+for(i=1;i<=5;i++)
+{
+	document.write(i);
+    black = black + (i);
+	for(j=1;j<=((i*2)-1);j++)
+	{
+	document.write("*");
+    black = black + "*";
+	}
+	for(j=1;j<=(6-i);j++)
+	{
+	document.write(i + "" + i);
+    black = black + (i + "" + i);
+	}
+	document.write("\n");
+    black = black + "\n";
+}
+document.write("\n")
+black = black + "\n";
+
+document.write("pyramid NO.24.");
+black = black + ("pyramid NO.24.");
+console.log(black);
+</script>
+</pre></font>
+</body></html>

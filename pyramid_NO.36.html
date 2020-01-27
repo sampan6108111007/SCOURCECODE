@@ -1,0 +1,56 @@
+<html>
+<body><font size=5>
+<pre style="font-family:courier;">
+<script>
+var black =""
+for(row=1;row<=3;row++) {
+	for(col=1;col<=4-row;col++){
+		document.write(row+col-1);
+        black = black + (row+col-1);
+	}
+	for(col=1;col<=row;col++){
+		document.write("*");
+        black = black + "*";
+	}
+	for(col=2;col<=row;col++){
+		document.write("*");
+        black = black + "*";
+	}
+	for(col=3;col>=row;col--){
+		document.write(col);
+        black = black + (col);
+	}
+	document.write("\n");
+    black = black + "\n";
+}
+for(row=2;row>=1;row--) {
+	for(col=1;col<=4-row;col++){
+		document.write(row+col-1);
+        black = black + (row+col-1);
+	}
+	for(col=1;col<=row;col++){
+		document.write("*");
+        black = black +  "*";
+	}
+	for(col=3;col<=1+row;col++){
+		document.write("*");
+        black = black + "*";
+	}
+	
+	for(col=3;col>=row;col--) {
+		document.write(col);
+        black = black + (col);
+	}
+
+	document.write("\n");
+    black = black + "\n";
+}
+document.write("\n")
+black = black + "\n";
+
+document.write("pyramid NO.36.");
+black = black + ("pyramid NO.36.");
+console.log(black);
+</script>
+</pre></font>
+</body></html>

@@ -1,0 +1,72 @@
+<html>
+<body><font size=5>
+<pre style="font-family:courier;">
+<script>
+var black =""
+for(row=1;row<=3;row++) {
+	for(col=1;col<=3-row;col++) {
+		
+		document.write(" ");
+        black = black + " ";
+	}
+		document.write("*");
+        black = black + "*";
+	for(col=2;col<=row;col++){
+		document.write(col);
+        black = black +(col);
+	}
+	for(col=row;col<=row;col++) {
+		
+		document.write(col);
+        black = black + (col);
+	}
+	for(col=row;col>=2;col--){
+		document.write(col);
+        black = black + (col);
+	}
+		document.write("*");
+        black = black + "*";
+	for(col=1;col<=3-row;col++) {
+		
+		document.write(" ");
+        black = black + " ";
+	}
+		document.write("\n");
+        black = black + "\n";
+}
+for(row=2;row>=1;row--) {
+	for(col=1;col<=3-row;col++) {
+		document.write(" ");
+        black = black + " ";
+	}
+	
+		document.write("*");
+        black = black + "*";
+	for(col=1;col<=row;col++){
+		document.write(row);
+        black = black + (row);
+	}
+	
+	for(col=2;col<=row;col++){
+		document.write(col);
+        black = black + (col);
+	}
+		document.write("*");
+        black = black + "*";
+	for(col=1;col<=3-row;col++) {
+		document.write(" ");
+        black = black + " ";
+	}
+
+	document.write("\n");
+    black = black + "\n";
+}
+document.write("\n")
+black = black + "\n";
+
+document.write("pyramid NO.34.");
+black = black + ("pyramid NO.34.");
+console.log(black);
+</script>
+</pre></font>
+</body></html>
