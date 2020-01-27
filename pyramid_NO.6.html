@@ -1,0 +1,30 @@
+<html>
+<body><font size=5>
+<pre style="font-family:courier;">
+<script>
+var o =""
+var tRow = 7;
+for(row=tRow; row >= 1; row--) {
+ // Column have 4 parts
+ for(col=1;col<=tRow - row + 1;col++){ 
+  document.write(" "); 
+  o = o + " " ;
+ }
+ for(col=1; col <= row-1 ; col++) { 
+  document.write( col%2 );
+  o = o + col%2 ;
+ }
+ 
+ o = o + row ;
+ for(col=row; col >= 1 ; col--) { 
+  document.write( col%2); 
+  o = o + col%2 ;
+ }
+ document.write("\n");
+ o = o +"\n";
+}
+document.write("pyramid NO.6.");
+console.log(o);
+</script>
+</pre></font>
+</body></html>

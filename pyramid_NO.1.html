@@ -1,0 +1,33 @@
+<html>
+<body><font size=5>
+<pre style="font-family:courier;">
+<script>
+var black =""
+var tRow = 4;
+for(row=1; row <= tRow; row++) {
+ // Column have 4 parts
+ for(col=2; col <= row; col++){ 
+  document.write(" "); 
+  black = black + " " ;
+ }
+ document.write(row + "" + row);
+ black = black +row + "" + row;
+ 
+ for(col=tRow; col >= (row + 1); col--) { 
+  document.write( "**" ); 
+  black = black +"**";
+ }
+ document.write( row + "" + row );
+ black = black +row + "" + row ;
+
+ 
+ document.write("\n");
+ black = black +"\n";
+
+}
+document.write("pyramid NO.1.");
+console.log(black);
+console.log("pyramid NO.1.");
+</script>
+</pre></font>
+</body></html>

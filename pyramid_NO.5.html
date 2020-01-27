@@ -1,0 +1,52 @@
+<html>
+<body><font size=5>
+<pre style="font-family:courier;">
+<script>
+var o =""
+var tRow = 4;
+for(row=1; row <= tRow; row++) {
+ // Column have 4 parts
+ for(col=tRow; col > row; col--){ 
+  document.write(" "); 
+  o = o + " ";
+ }
+ document.write(row + "");
+ o = o + row + "";
+ 
+ for(col=tRow; col <= (row + 2); col++) { 
+  document.write( "**" ); 
+  o = o +"**";
+ }
+ document.write( row + ""  );
+ o = o + row + "";
+ document.write("\n");
+ o = o +"\n";
+}
+console.log(o);
+
+for(row=2; row <= tRow; row++) {
+ // Column have 4 parts
+ 
+ for(col=2; col <= row ; col++){ 
+  document.write(" "); 
+  o = o + " " ;
+ }
+ document.write(5 - row +"");
+ o = o + 5 - row +"";
+ 
+ for(col=tRow; col >= (row + 1); col--) { 
+  document.write( "**" ); 
+  o = o +"**";
+ }
+ document.write(5 - row +"");
+ o = o + 5 - row +"" ;
+ document.write("\n");
+ o = o +"\n";
+}
+
+document.write("pyramid NO.5.");
+console.log(o);
+console.log("pyramid NO.5.");
+</script>
+</pre></font>
+</body></html>

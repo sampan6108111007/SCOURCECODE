@@ -1,0 +1,31 @@
+<html>
+<body><font size=5>
+<pre style="font-family:courier;">
+<script>
+var o =""
+var tRow = 4;
+for(row=1; row <= tRow; row++) {
+ // Column have 4 parts
+ for(col=1; col <= row; col++){ 
+  document.write("*"); 
+  o = o + "*" ;
+ }
+ for(col=row; col >= 2 ; col--) { 
+  document.write(col); 
+  o = o +col;
+ }
+ for(col=1; col <= row; col++){ 
+  document.write(col); 
+  o = o + col ;
+ }
+ document.write("\n");
+ o = o +"\n";
+
+}
+document.write("\n");
+document.write("pyramid NO.4.");
+console.log(o);
+console.log("pyramid NO.4.");
+</script>
+</pre></font>
+</body></html>
